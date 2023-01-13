@@ -5,21 +5,32 @@ namespace BinarySearchTree
     {
         public static void Main(string[] args)
         {
-            BinaryTree bn = new BinaryTree();
-            bn.Add(30);
-            bn.Add(40);
-            bn.Add(50);
-            bn.Add(60);
-            bn.Add(80);
-            Console.WriteLine("After Preorder Result Will be: ");
-            bn.TravesrePreorder(bn.root);
-            Console.WriteLine("After Postorder Result Will be: ");
-            bn.TravesrePostorder(bn.root);
-            Console.WriteLine("After Inorder Result Will be: ");
-            bn.TravesreInorder(bn.root);
+            BinaryTree binary = new BinaryTree();
+            binary.Add(56);
+            binary.Add(30);
+            binary.Add(70);
+            binary.Add(22);
+            binary.Add(40);
+            binary.Add(3);
+            binary.Add(11);
+            binary.Add(16);
+            binary.Add(60);
+            binary.Add(65);
+            binary.Add(63);
+            binary.Add(67);
+            binary.Add(95);
+            binary.Add(70);
 
-            Console.WriteLine(" Welcome to Binary Search Tree Program ");
-
+            Console.WriteLine();
+            Console.WriteLine("Preorder is: ");
+            binary.TravesrePreorder(binary.root);
+            Console.WriteLine();
+            Console.WriteLine("Postorder is: ");
+            binary.TravesrePostorder(binary.root);
+            Console.WriteLine();
+            Console.WriteLine("Inorder is: ");
+            binary.TravesreInorder(binary.root);
+            Console.WriteLine();
         }
 
     }
